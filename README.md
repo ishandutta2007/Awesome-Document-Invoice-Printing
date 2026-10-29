@@ -1,6 +1,12 @@
 # 🖨️ Awesome Document & Invoice Printing [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated directory of premier enterprise SaaS solutions, cloud printing APIs, automated fulfillment document platforms, and self-hosted open-source invoicing systems.
+<p align="center">
+  <img src="./assets/banner.svg" alt="Awesome Document and Invoice Printing Banner" width="100%">
+</p>
+
+<p align="center">
+  <strong>⚡ Curated directory of enterprise SaaS solutions, cloud printing APIs, automated fulfillment document platforms, and self-hosted open-source invoicing systems. 🚀</strong>
+</p>
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
@@ -8,6 +14,8 @@
   <a href="https://github.com/ishandutta2007/Awesome-Document-Invoice-Printing/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Document-Invoice-Printing?style=social" alt="GitHub stars"></a>
   <a href="https://github.com/ishandutta2007/Awesome-Document-Invoice-Printing/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Document-Invoice-Printing?style=social" alt="GitHub forks"></a>
   <a href="https://github.com/ishandutta2007/Awesome-Document-Invoice-Printing/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-Ecosystem-ff69b4.svg" alt="Awesome List"></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
 ---
@@ -20,6 +28,8 @@
 - [💻 Open-Source GitHub Projects](#-open-source-github-projects)
 - [🏛️ Architectural Comparison](#️-architectural-comparison)
 - [🧭 Platform Selection Matrix](#-platform-selection-matrix)
+- [⭐ Star History](#-star-history)
+- [💖 Support](#-support)
 - [🤝 How to Contribute](#-how-to-contribute)
 - [📜 Disclaimer](#-disclaimer)
 - [📄 License](#-license)
@@ -28,7 +38,7 @@
 
 ## 📖 Introduction & Scope
 
-**Document & Invoice Printing** software provides the critical fulfillment back-office layer for modern e-commerce stores, B2B wholesale platforms, logistics providers, and independent contractors. These systems automate the creation, tax calculation, multi-currency formatting, PDF rendering, automated email delivery, and physical thermal or desktop cloud printing of invoices, packing slips, pick lists, credit notes, and shipping manifests.
+💡 **Document & Invoice Printing** software provides the critical fulfillment back-office layer for modern e-commerce stores, B2B wholesale platforms, logistics providers, and independent contractors. These systems automate the creation, tax calculation, multi-currency formatting, PDF rendering, automated email delivery, and physical thermal or desktop cloud printing of invoices, packing slips, pick lists, credit notes, and shipping manifests.
 
 Whether you run a high-volume omnichannel merchant operation requiring low-latency remote hardware printing via cloud APIs or a developer building a sovereign self-hosted accounting pipeline, this guide provides a meticulously researched benchmark of SaaS vendors and open-source GitHub alternatives.
 
@@ -36,11 +46,11 @@ Whether you run a high-volume omnichannel merchant operation requiring low-laten
 
 ## 📊 Sector Overview & Market Dynamics
 
-📈 The global e-invoicing and document printing workflow market was estimated at **$13.8 billion in 2024** and is projected to surpass **$35.9 billion by 2030**, advancing at a CAGR of **17.3%**.
+📈 The global e-invoicing and document printing workflow market was estimated at **$13.8 billion in 2024** and is projected to surpass **$35.9 billion by 2030**, advancing at a compound annual growth rate (CAGR) of **17.3%**.
 
 The sector demonstrates a **moderately fragmented and hybrid market structure**:
-- **Enterprise & Multi-Carrier Fulfillment Tier**: Consolidated shipping and omnichannel commerce platforms (Shopify, ShipStation/Aura, Shippo) handle core shipping labels and basic document generation for millions of global merchants, commanding massive GMV throughput.
-- **Specialized Niche Apps & Cloud Hardware Integrations**: A fragmented ecosystem of specialized apps (Order Printer Pro, Sufio, Invoice Falcon) and dedicated hardware bridge utilities (PrintNode) dominate specialized tax compliance (VAT, GST, Peppol) and zero-click silent thermal printing. Simultaneously, open-source ERP and invoicing frameworks provide fully self-hosted data-sovereign alternatives for cost-conscious engineering teams.
+- 🏢 **Enterprise & Multi-Carrier Fulfillment Tier**: Consolidated shipping and omnichannel commerce platforms (Shopify, ShipStation/Auctane, Shippo) handle core shipping labels and basic document generation for millions of global merchants, commanding massive GMV throughput.
+- 🌐 **Specialized Niche Apps & Cloud Hardware Integrations**: A fragmented ecosystem of specialized apps (Order Printer Pro, Sufio, Invoice Falcon) and dedicated hardware bridge utilities (PrintNode) dominate specialized tax compliance (VAT, GST, Peppol) and zero-click silent thermal printing. Simultaneously, open-source ERP and invoicing frameworks provide fully self-hosted data-sovereign alternatives for cost-conscious engineering teams.
 
 ---
 
@@ -81,7 +91,7 @@ The table below catalogs top open-source invoicing systems, programmatic PDF ren
 | **[go-invoice-generator](https://github.com/angelodlfrtr/go-invoice-generator)** | [![Stars](https://img.shields.io/github/stars/angelodlfrtr/go-invoice-generator?style=social&color=white)](https://github.com/angelodlfrtr/go-invoice-generator/stargazers) | Go | MIT | Fluent Go library for generating clean PDF invoices programmatically with tax breakdowns, currency formatting, and company logo embedding. |
 | **[invoiced](https://github.com/mpdroog/invoiced)** | [![Stars](https://img.shields.io/github/stars/mpdroog/invoiced?style=social&color=white)](https://github.com/mpdroog/invoiced/stargazers) | Go / React | MIT | Self-hosted invoicing and hour tracking system storing records as plain TOML files with automatic Git audit commits and UBL XML export. |
 | **[TerraPDF](https://github.com/sahebansari/TerraPDF)** | [![Stars](https://img.shields.io/github/stars/sahebansari/TerraPDF?style=social&color=white)](https://github.com/sahebansari/TerraPDF/stargazers) | C# / .NET | MIT | Modern .NET library for generating enterprise reports and packing slips with Code128 barcode encoding, QR codes, tables, and AES encryption. |
-| **[Zedgerr](https://github.com/vMawk/Zedgerr)** | [![Stars](https://img.shields.io/github/stars/vMawk/Zedgerr)](https://github.com/vMawk/Zedgerr/stargazers) | Go / SQLite / Docker | GPL-3.0 | Dockerized accounting and invoicing suite for small businesses, featuring time-to-invoice conversion, EU reverse charge, and multi-country tax presets. |
+| **[Zedgerr](https://github.com/vMawk/Zedgerr)** | [![Stars](https://img.shields.io/github/stars/vMawk/Zedgerr?style=social&color=white)](https://github.com/vMawk/Zedgerr/stargazers) | Go / SQLite / Docker | GPL-3.0 | Dockerized accounting and invoicing suite for small businesses, featuring time-to-invoice conversion, EU reverse charge, and multi-country tax presets. |
 | **[BulkInvoicer](https://pypi.org/project/bulkinvoicer/)** | *CLI / PyPI* | Python | MIT | Spreadsheet-driven CLI engine that batches hundreds of invoices, summaries, and UPI QR codes into printable customer PDFs directly from Excel. |
 
 ---
@@ -122,6 +132,24 @@ The table below catalogs top open-source invoicing systems, programmatic PDF ren
 4. 📦 **For multi-carrier fulfillment with shipping documentation**: Choose **ShipStation** or **Shippo**. Combines packing slip printing with bulk label generation.
 5. 🛡️ **For complete data ownership & self-hosted invoicing**: Deploy **Invoice Ninja**, **Akaunting**, or **Crater** on your own server.
 6. 💻 **For programmatic backend PDF generation**: Use **go-invoice-generator** (Go), **TerraPDF** (.NET), or **by-cx/InvoiceGenerator** (Python).
+
+---
+
+## ⭐ Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Document-Invoice-Printing&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Document-Invoice-Printing&type=date&legend=top-left)
+
+---
+
+## 💖 Support
+
+A heartfelt **thank you** 🙏 to all developers, warehouse operators, ecommerce merchants, and open-source contributors who build with and support this curated directory!
+
+If you find this repository helpful, please consider supporting the project:
+- ⭐ **Star** this repository on GitHub to boost discoverability for the community.
+- 🍴 **Fork** and share it with your team, fellow developers, and online store owners.
+- 📢 **Contribute**: Submit a PR to add emerging SaaS tools or open-source invoice/printing engines.
+- ☕ **Buy me a coffee**: Support ongoing research, benchmarking, and updates via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
 
 ---
 
