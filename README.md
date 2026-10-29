@@ -75,7 +75,7 @@ The table below catalogs premier SaaS document generation, cloud printing, and o
 
 ## 💻 Open-Source GitHub Projects
 
-The table below catalogs top open-source invoicing systems, programmatic PDF rendering engines, and document printing utilities. Repositories are ranked in descending order by GitHub Stars_Count.
+The table below catalogs top open-source invoicing systems, programmatic PDF rendering engines, and document printing utilities. Repositories are ranked in descending order by GitHub_Stars_Count.
 
 | Project | GitHub_Stars | Language / Stack | License | Description & Highlights |
 | :--- | :--- | :--- | :--- | :--- |
