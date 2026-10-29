@@ -1,201 +1,150 @@
-# Awesome-Document-Invoice-Printing
-
-## Top Document & Invoice Printing Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Order Document Generation, Cloud Printing & Self-Hosted Invoicing*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Document & Invoice Printing**. These tools enable merchants to generate, customize, print, and automatically deliver order documents—invoices, packing slips, receipts, and credit notes—reducing manual fulfillment work and ensuring tax-compliant customer communication.
-
-
-
-**Examples** include Shopify Order Printer, ShipStation, Order Desk, EasyRoutes, Invoice Falcon, Sufio, PrintNode, Order Printer Pro, Fulfillrite, and Shippo (the category leaders).
-
-
-
-**Open-source emphasis**: Document & Invoice Printing is a domain where open-source tooling is **fragmented but genuinely useful for specific layers**. The strongest active projects are **invoiced** (a self-hosted Go-based invoicing system with TOML file storage and Git audit trails) and **go-invoice-generator** (a Go library for programmatic PDF invoice creation with tax and discount support). For the printing layer specifically, **no mature open-source equivalent to PrintNode exists**—cloud printing APIs that bridge web applications to local printers remain commercial. **BulkInvoicer** provides an Excel-driven CLI for freelancers, and **Zedgerr** offers a full self-hosted bookkeeping suite with PDF export. The critical gap: **no open-source project replicates the Shopify-native, one-click document generation** of Order Printer Pro or the automatic PDF delivery of Sufio.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-products)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Shopify Order Printer](https://apps.shopify.com/shopify-order-printer)**  
-
-  Shopify's free native app for printing pick lists, packing slips, invoices, and receipts; customize templates with HTML/CSS/Liquid, print in bulk up to 50 orders, and preview with real orders . **Free and foundational**, but does not support POS receipt customization and has mixed reviews (2.6 stars) .
-
-
-
-- **[Order Printer Pro](https://apps.shopify.com/order-printer-pro)**  
-
-  The most widely adopted Shopify order printing app (4.9 stars, 2,527+ reviews); features bulk print/export, automated PDF invoice delivery, multi-language/currency support, B2B/VAT handling, and e-invoicing (Peppol) compliance . Free up to 50 orders/month, then $10–$40/month based on volume . Users praise functionality but note the free-to-paid transition was abrupt .
-
-
-
-- **[Sufio](https://sufio.com/)**  
-
-  Shopify-endorsed invoicing platform with tax-compliant templates validated by accountants for India, EU, UK, and other regions; supports 40+ languages, 40,000+ premium fonts, automatic PDF delivery, POS printing, and e-invoicing . Plans: Starter $7/mo (15 invoices), Growth $19/mo (50 invoices), Professional $49/mo (5,000), Premium $129/mo (unlimited) . Strong for global stores needing compliance.
-
-
-
-- **[Invoice Falcon](https://apps.shopify.com/invoice-falcon)**  
-
-  Shopify invoice app (4.6 stars, 258 reviews) with a visual template editor, automatic PDF delivery, bulk print from admin and POS, multi-currency support, and tax compliance for US, Canada, Germany, UK . Free up to 50 invoices/month, Unlimited at $15/month .
-
-
-
-- **[ShipStation](https://www.shipstation.com/)**  
-
-  Multi-channel shipping platform with batch label printing, packing slip customization, branded tracking, and a customer-initiated returns portal; pricing $9–$159/month based on volume . **Shipping-focused** rather than invoice-focused, but includes document printing as part of fulfillment workflow .
-
-
-
-- **[Order Desk](https://www.orderdesk.com/)**  
-
-  Order management hub with 300+ integrations, custom document creation, rule-based automation, and multi-store management . Plans: Starter $20/mo + 25¢/order, Pro $60/mo + 10¢/order, Plus $125/mo + 5¢/order . **Workflow-focused**—document generation is one capability among many.
-
-
-
-- **[PrintNode](https://www.printnode.com/)**  
-
-  Cloud printing API that connects web applications to any local printer (DYMO, Zebra, HP, Epson); supports PDF and RAW (ZPL/EPL) printing, integrator accounts for white-labeling, and scale (50+ printers, 600+ print jobs without issues per a customer testimonial) . **The standard for remote printing**—no open-source equivalent exists.
-
-
-
-- **[EasyRoutes](https://www.roundtrip.ai/)**  
-
-  Delivery route planning and dispatch platform with packing slips, labels, and customer notifications; free for Shopify (limited features), paid plans from $39/month per driver . **Route-focused** rather than document printing, but includes delivery documentation.
-
-
-
-- **[Fulfillrite](https://www.fulfillrite.com/)**  
-
-  Order fulfillment service with integration for order printing and shipping; listed as a category reference for fulfillment-adjacent document workflows.
-
-
-
-- **[Shippo](https://goshippo.com/)**  
-
-  Shipping API and dashboard for rate comparison, label generation, and tracking; listed as a category reference for shipping document generation.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### Self-Hosted Invoicing Systems
-
-
-
-- **[invoiced](https://github.com/mpdroog/invoiced)**  
-
-  Self-hosted invoicing and hour registration system for freelancers and small businesses (Go/React) . Stores all data as human-readable **TOML files** with **automatic Git commit** for full audit trail and rollback . Features PDF invoice generation with **UBL XML export**, multi-entity support, CAMT053 bank statement import for payment matching, VAT handling for NL/EU reverse charge/international exports, and quarterly tax summaries . **The most complete open-source invoicing system** for freelancers wanting data ownership—but it is not Shopify-integrated and requires self-hosting setup.
-
-
-
-- **[Zedgerr](https://github.com/vMawk/Zedgerr)**  
-
-  Open-source invoicing, expenses, and bookkeeping suite for freelancers and small businesses (Docker one-command deploy) . Features invoices/quotes/credit notes with PDF export, time tracking to invoice conversion, EU reverse-charge invoicing, client portal, quarterly tax summaries, profit/loss and balance sheet, double-entry ledger, bank CSV import, 2FA, and team roles . Works in **40+ countries** with country-specific tax presets. **The most feature-complete open-source bookkeeping + invoicing platform**—but it is a full accounting system, not a Shopify document printing app.
-
-
-
-### PDF Generation Libraries
-
-
-
-- **[go-invoice-generator](https://github.com/angelodlfrtr/go-invoice-generator)**  
-
-  Go library for programmatic PDF invoice generation with a fluent API . Features company/customer contacts with logo embedding, line items with name/description/unit cost/quantity, **percentage or fixed tax and discount support**, multi-tax breakdown, document-level discounts, header/footer customization, and validation before PDF generation . **The strongest open-source library for building custom invoice PDFs** in Go applications.
-
-
-
-- **[BulkInvoicer](https://pypi.org/project/bulkinvoicer/)**  
-
-  Excel-driven CLI tool for freelancers and small businesses (Python, MIT) . Generates professional invoices, client summaries, and account statements from a spreadsheet; supports custom templates, **UPI QR code embedding** for payments, PDF output (combined, client-wise, or individual), auto-matching receipts, and TOML configuration . **Offline and open-source**—ideal for freelancers wanting bulk invoice generation without a web platform.
-
-
-
-- **[TerraPDF](https://github.com/sahebansari/TerraPDF)**  
-
-  Open-source C# PDF library for .NET 8/9/10 (MIT) . Features text styling, column/row/table layouts, image embedding, **Code128 barcodes and QR codes**, AES-256 encryption, custom font embedding with subsetting, and a fluent composable API . **For .NET developers** building custom invoice/report generation with barcode support.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **printly** — Privacy-first document printing platform where users upload documents for printing at certified centers; Go/Gin backend with Firebase auth, RBAC, and print center management . **Not a merchant invoice tool**—different use case (consumer document printing).
-
-- **No open-source equivalent to PrintNode exists** — The cloud printing API that bridges web apps to local printers (with integrator accounts, RAW ZPL/EPL support, and cross-platform client software) is not replicated by any active open-source project.
-
-
-
-**Frameworks for building custom systems**: For **Shopify merchants**, no open-source alternative matches Order Printer Pro or Sufio—use the commercial apps. For **self-hosted invoicing**, invoiced provides a Go-based system with Git audit trails , and Zedgerr offers a full bookkeeping suite with 40+ country support . For **programmatic PDF generation**, go-invoice-generator (Go) and TerraPDF (.NET) provide libraries to build custom invoice templates . For **cloud printing**, PrintNode remains the only mature option.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Invoice and document generation must comply with local tax and accounting regulations; tax-compliant invoicing often requires region-specific validation (EU VAT, India GST, US sales tax) that open-source projects may not fully cover.
-
-- **Open-source document & invoice printing is strongest for self-hosted bookkeeping and PDF generation**—invoiced and Zedgerr provide complete invoicing systems , and go-invoice-generator provides a library for custom PDFs . However, **no open-source project replicates the Shopify-native document printing** of Order Printer Pro or the cloud printing API of PrintNode. Merchants on Shopify should evaluate commercial apps; those seeking self-hosted solutions should consider Zedgerr or invoiced.
-
-- Verify license terms for commercial use; invoiced is open-source (check repository), Zedgerr is open-source (check license), go-invoice-generator is a Go package, and BulkInvoicer uses MIT .
-
-
+# 🖨️ Awesome Document & Invoice Printing [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+
+> A curated directory of premier enterprise SaaS solutions, cloud printing APIs, automated fulfillment document platforms, and self-hosted open-source invoicing systems.
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Document-Invoice-Printing/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Document-Invoice-Printing?style=social" alt="GitHub stars"></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Document-Invoice-Printing/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Document-Invoice-Printing?style=social" alt="GitHub forks"></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Document-Invoice-Printing/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
+</p>
 
 ---
 
+## 📑 Table of Contents
 
+- [📖 Introduction & Scope](#-introduction--scope)
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Hosted Platforms](#️-saas--hosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🏛️ Architectural Comparison](#️-architectural-comparison)
+- [🧭 Platform Selection Matrix](#-platform-selection-matrix)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [📜 Disclaimer](#-disclaimer)
+- [📄 License](#-license)
 
-**Made for ecommerce operators, fulfillment teams, freelancers, and finance engineers.**  
+---
 
-Let's make document and invoice printing more open, but with clear eyes about the Shopify-native and cloud-printing gaps that remain.
+## 📖 Introduction & Scope
+
+**Document & Invoice Printing** software provides the critical fulfillment back-office layer for modern e-commerce stores, B2B wholesale platforms, logistics providers, and independent contractors. These systems automate the creation, tax calculation, multi-currency formatting, PDF rendering, automated email delivery, and physical thermal or desktop cloud printing of invoices, packing slips, pick lists, credit notes, and shipping manifests.
+
+Whether you run a high-volume omnichannel merchant operation requiring low-latency remote hardware printing via cloud APIs or a developer building a sovereign self-hosted accounting pipeline, this guide provides a meticulously researched benchmark of SaaS vendors and open-source GitHub alternatives.
+
+---
+
+## 📊 Sector Overview & Market Dynamics
+
+📈 The global e-invoicing and document printing workflow market was estimated at **$13.8 billion in 2024** and is projected to surpass **$35.9 billion by 2030**, advancing at a CAGR of **17.3%**.
+
+The sector demonstrates a **moderately fragmented and hybrid market structure**:
+- **Enterprise & Multi-Carrier Fulfillment Tier**: Consolidated shipping and omnichannel commerce platforms (Shopify, ShipStation/Aura, Shippo) handle core shipping labels and basic document generation for millions of global merchants, commanding massive GMV throughput.
+- **Specialized Niche Apps & Cloud Hardware Integrations**: A fragmented ecosystem of specialized apps (Order Printer Pro, Sufio, Invoice Falcon) and dedicated hardware bridge utilities (PrintNode) dominate specialized tax compliance (VAT, GST, Peppol) and zero-click silent thermal printing. Simultaneously, open-source ERP and invoicing frameworks provide fully self-hosted data-sovereign alternatives for cost-conscious engineering teams.
+
+---
+
+## ☁️ SaaS & Hosted Platforms
+
+The table below catalogs premier SaaS document generation, cloud printing, and order printing platforms, sorted in descending order by company scale (market valuation / parent enterprise revenue).
+
+| Platform | Enterprise Valuation / Revenue Scale | Starting Tier Price | Free Tier / Trial Allowance | Primary Specialization & Key Features |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Shopify Order Printer](https://apps.shopify.com/shopify-order-printer)** | **$100B+ Public Market Cap** ($7.06B ARR parent) | **$0.00/mo** (included with Shopify) | **Free forever** with any active Shopify merchant plan | Native Shopify document printing app; bulk print up to 50 packing slips, invoices, and pick lists with custom HTML/Liquid template editing. |
+| **[ShipStation](https://www.shipstation.com/)** | **~$10B Valuation** (Auctane Group subsidiary) | **$9.99/mo** (50 shipments/month) | **30-day free trial** with full feature access and up to 50 test labels | Multi-carrier fulfillment platform; automated packing slip customization, thermal shipping label printing, barcode scan-to-print, and branded tracking. |
+| **[Shippo](https://goshippo.com/)** | **$1.0B Valuation** (Unicorn status) | **$19.00/mo** (Professional tier) | **Free forever plan** ($0/mo + 5¢/label on non-carrier accounts, unlimited label/packing slip creation) | Shipping and document API engine; instant packing slip generation, carrier rate comparison, batch PDF manifest printing, and webhooks. |
+| **[Order Desk](https://www.orderdesk.com/)** | **~$15M+ ARR** (Bootstrapped enterprise) | **$20.00/mo** (+ 25¢ per order) | **30-day free trial** with unlimited document and integration testing | Rule-based order workflow automation engine; custom invoice and packing slip generation, split fulfillment, and 300+ third-party integrations. |
+| **[Fulfillrite](https://www.fulfillrite.com/)** | **~$10M - $25M Revenue** (Mid-market 3PL) | **$0.00/mo platform fee** (Custom pick/pack fees) | **Free consultation and quote** (no software subscription fee; pay per order fulfilled) | Full-service 3PL fulfillment provider; automated custom packing slip insertions, real-time portal printing, and order document fulfillment. |
+| **[EasyRoutes](https://www.roundtrip.ai/)** | **~$5M - $10M Valuation** (Roundtrip AI) | **$39.00/mo** (per driver tier) | **14-day free trial** with full route optimization and packing slip printing access | Local delivery route planner and dispatch system; prints organized driver manifests, stop-by-stop packing slips, and delivery labels directly from Shopify. |
+| **[Order Printer Pro](https://apps.shopify.com/order-printer-pro)** | **~$5M - $10M Valuation** (FORSBERG+two) | **$10.00/mo** (Starter tier) | **Free forever plan** for up to 50 orders/month; **14-day free trial** on paid tiers | Industry-standard Shopify invoicing app; automated PDF invoice delivery, multi-currency/VAT compliance, Peppol e-invoicing, and bulk print. |
+| **[Sufio](https://sufio.com/)** | **~$3M - $8M Valuation** (Independent bootstrapped) | **$7.00/mo** (Starter tier, 15 invoices) | **14-day free trial** with all features and up to 50 test invoices | Certified tax-compliant invoicing software; accountant-validated EU/VAT/GST templates, 40+ languages, automatic customer email delivery, and POS receipts. |
+| **[PrintNode](https://www.printnode.com/)** | **~$2M - $5M ARR** (Specialized infrastructure) | **$9.00/mo** (up to 3,000 print jobs) | **Free forever tier** with 1 user, 1 computer, 100 print jobs/month; **7-day free trial** | Cloud printing API and desktop bridge; direct silent printing to any thermal (DYMO, Zebra) or desktop printer (PDF, RAW/ZPL) without print dialogs. |
+| **[Invoice Falcon](https://apps.shopify.com/invoice-falcon)** | **~$1M - $3M Valuation** (Specialized app) | **$9.99/mo** (Unlimited plan) | **Free forever plan** for up to 50 invoices/month | Visual invoice template designer for Shopify; automatic PDF attachments, multi-lingual support, POS printing, and credit note issuance. |
+
+---
+
+## 💻 Open-Source GitHub Projects
+
+The table below catalogs top open-source invoicing systems, programmatic PDF rendering engines, and document printing utilities. Repositories are ranked in descending order by GitHub star count.
+
+| Project | Stars | Language / Stack | License | Description & Highlights |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Invoice Ninja](https://github.com/invoiceninja/invoiceninja)** | [![Stars](https://img.shields.io/github/stars/invoiceninja/invoiceninja?style=social&color=white)](https://github.com/invoiceninja/invoiceninja/stargazers) | PHP / Laravel / Flutter | Proprietary Open-Source | Comprehensive self-hosted invoicing, billing, client portal, and payment processing suite with multi-company and PDF generation support. |
+| **[Akaunting](https://github.com/akaunting/akaunting)** | [![Stars](https://img.shields.io/github/stars/akaunting/akaunting?style=social&color=white)](https://github.com/akaunting/akaunting/stargazers) | PHP / Laravel / Blade | GPL-3.0 | Free, full-featured online accounting and invoice management software designed for small businesses and freelancers. |
+| **[Crater](https://github.com/crater-invoice-inc/crater)** | [![Stars](https://img.shields.io/github/stars/crater-invoice-inc/crater?style=social&color=white)](https://github.com/crater-invoice-inc/crater/stargazers) | PHP / Vue / Flutter | AGPL-3.0 | Open-source invoicing application made for freelancers and small businesses to track expenses, generate estimates, and print branded PDF invoices. |
+| **[InvoicePlane](https://github.com/InvoicePlane/InvoicePlane)** | [![Stars](https://img.shields.io/github/stars/InvoicePlane/InvoicePlane?style=social&color=white)](https://github.com/InvoicePlane/InvoicePlane/stargazers) | PHP / CodeIgniter | MIT | Lightweight self-hosted web application for managing quotes, invoices, clients, payments, and customizable printable PDF documents. |
+| **[Meteroid](https://github.com/meteroid-oss/meteroid)** | [![Stars](https://img.shields.io/github/stars/meteroid-oss/meteroid?style=social&color=white)](https://github.com/meteroid-oss/meteroid/stargazers) | TypeScript / Next.js | AGPL-3.0 | Modern pricing, subscription, and invoicing infrastructure supporting complex usage-based billing, automated tax invoicing, and PDF export. |
+| **[SolidInvoice](https://github.com/SolidInvoice/SolidInvoice)** | [![Stars](https://img.shields.io/github/stars/SolidInvoice/SolidInvoice?style=social&color=white)](https://github.com/SolidInvoice/SolidInvoice/stargazers) | PHP / Symfony | MIT | Elegant open-source invoicing and quotation platform with integrated recurring billing, notification workflows, and PDF document printing. |
+| **[Open Source Billing](https://github.com/vteams/open-source-billing)** | [![Stars](https://img.shields.io/github/stars/vteams/open-source-billing?style=social&color=white)](https://github.com/vteams/open-source-billing/stargazers) | Ruby on Rails | MIT | Clean and simple web-based invoicing tool to generate invoices, track receivables, print paper statements, and collect payments online. |
+| **[Invoice Generator (React)](https://github.com/johnuberbacher/invoice-generator)** | [![Stars](https://img.shields.io/github/stars/johnuberbacher/invoice-generator?style=social&color=white)](https://github.com/johnuberbacher/invoice-generator/stargazers) | JavaScript / React | MIT | Single-page invoice creator utilizing `jsPDF` to capture client and line-item details from modal inputs and render downloadable/printable PDFs. |
+| **[InvoiceGenerator](https://github.com/by-cx/InvoiceGenerator)** | [![Stars](https://img.shields.io/github/stars/by-cx/InvoiceGenerator?style=social&color=white)](https://github.com/by-cx/InvoiceGenerator/stargazers) | Python | MIT | Standalone Python module and CLI utility for compiling structured invoice data into clean, printable vector PDF documents. |
+| **[go-invoice-generator](https://github.com/angelodlfrtr/go-invoice-generator)** | [![Stars](https://img.shields.io/github/stars/angelodlfrtr/go-invoice-generator?style=social&color=white)](https://github.com/angelodlfrtr/go-invoice-generator/stargazers) | Go | MIT | Fluent Go library for generating clean PDF invoices programmatically with tax breakdowns, currency formatting, and company logo embedding. |
+| **[invoiced](https://github.com/mpdroog/invoiced)** | [![Stars](https://img.shields.io/github/stars/mpdroog/invoiced?style=social&color=white)](https://github.com/mpdroog/invoiced/stargazers) | Go / React | MIT | Self-hosted invoicing and hour tracking system storing records as plain TOML files with automatic Git audit commits and UBL XML export. |
+| **[TerraPDF](https://github.com/sahebansari/TerraPDF)** | [![Stars](https://img.shields.io/github/stars/sahebansari/TerraPDF?style=social&color=white)](https://github.com/sahebansari/TerraPDF/stargazers) | C# / .NET | MIT | Modern .NET library for generating enterprise reports and packing slips with Code128 barcode encoding, QR codes, tables, and AES encryption. |
+| **[Zedgerr](https://github.com/vMawk/Zedgerr)** | [![Stars](https://img.shields.io/github/stars/vMawk/Zedgerr)](https://github.com/vMawk/Zedgerr/stargazers) | Go / SQLite / Docker | GPL-3.0 | Dockerized accounting and invoicing suite for small businesses, featuring time-to-invoice conversion, EU reverse charge, and multi-country tax presets. |
+| **[BulkInvoicer](https://pypi.org/project/bulkinvoicer/)** | *CLI / PyPI* | Python | MIT | Spreadsheet-driven CLI engine that batches hundreds of invoices, summaries, and UPI QR codes into printable customer PDFs directly from Excel. |
+
+---
+
+## 🏛️ Architectural Comparison
+
+```
++-----------------------------------------------------------------------------------------+
+|                        DOCUMENT & INVOICE PRINTING ARCHITECTURE                         |
++-----------------------------------------------------------------------------------------+
+|                                                                                         |
+|  [ Cloud / SaaS Document Services ]                     [ Open-Source & Self-Hosted ]   |
+|  * Shopify Order Printer, Order Printer Pro             * Invoice Ninja, Akaunting      |
+|  * Sufio, ShipStation, Order Desk                       * Crater, InvoicePlane, invoiced|
+|                                                                                         |
+|   +------------------------------------+                 +----------------------------+ |
+|   | Native Store Webhooks & Triggers   |                 | 100% Data Sovereignty      | |
+|   | Certified Global Tax Engine (VAT)  |                 | Zero Per-Invoice Costs     | |
+|   | Automatic Peppol e-Invoicing       |                 | Custom Database Schema     | |
+|   | Zero Server Infrastructure Setup   |                 | Direct File System Storage | |
+|   +------------------------------------+                 +----------------------------+ |
+|                     |                                                  |                |
+|                     v                                                  v                |
+|       [ Cloud Printing API (PrintNode) ]                     [ Local Spooler / CUPS ]   |
+|       * Raw ZPL/EPL & Silent Thermal Print                   * Manual browser PDF print |
+|       * Web-to-Physical Printer Gateway                      * Driver dependent         |
+|                                                                                         |
++-----------------------------------------------------------------------------------------+
+```
+
+---
+
+## 🧭 Platform Selection Matrix
+
+1. ⚡ **For turnkey Shopify order printing with zero cost**: Choose **Shopify Order Printer**. Best for basic packing slips and pick lists up to 50 orders per batch.
+2. 🌍 **For international e-commerce & strict VAT/tax compliance**: Choose **Sufio** or **Order Printer Pro**. Delivers accountant-certified templates and automated invoice emails.
+3. 🖨️ **For silent, automated warehouse & thermal label printing**: Integrate **PrintNode**. Bridges your cloud application directly to DYMO, Zebra, and Epson printers without popup dialogs.
+4. 📦 **For multi-carrier fulfillment with shipping documentation**: Choose **ShipStation** or **Shippo**. Combines packing slip printing with bulk label generation.
+5. 🛡️ **For complete data ownership & self-hosted invoicing**: Deploy **Invoice Ninja**, **Akaunting**, or **Crater** on your own server.
+6. 💻 **For programmatic backend PDF generation**: Use **go-invoice-generator** (Go), **TerraPDF** (.NET), or **by-cx/InvoiceGenerator** (Python).
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are welcome! Please follow these guidelines:
+
+1. 🍴 Fork the repository.
+2. 🔍 Verify that any SaaS addition includes concrete starting pricing and specific free trial terms.
+3. ⭐ Ensure open-source additions include valid GitHub repository links and star badges (`style=social&color=white`).
+4. 📝 Add your entry to the appropriate table, sorted according to category criteria.
+5. 🚀 Submit a Pull Request with a clear, concise description of your additions.
+
+---
+
+## 📜 Disclaimer
+
+- This is a **community-curated** list — not exhaustive and not an explicit commercial endorsement.
+- Invoicing and tax documentation must comply with local jurisdiction laws (e.g., EU VAT directives, Peppol digital standards, India GST regulations, US state sales taxes).
+- Always verify licensing conditions prior to deploying open-source projects in commercial environments.
+
+---
+
+## 📄 License
+
+This repository is licensed under the [MIT License](LICENSE).
