@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Document-Invoice-Printing/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Document-Invoice-Printing?style=social" alt="GitHub stars"></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Document-Invoice-Printing/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Document-Invoice-Printing?style=social" alt="GitHub_Stars"></a>
   <a href="https://github.com/ishandutta2007/Awesome-Document-Invoice-Printing/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Document-Invoice-Printing?style=social" alt="GitHub forks"></a>
   <a href="https://github.com/ishandutta2007/Awesome-Document-Invoice-Printing/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-Ecosystem-ff69b4.svg" alt="Awesome List"></a>
@@ -75,9 +75,9 @@ The table below catalogs premier SaaS document generation, cloud printing, and o
 
 ## 💻 Open-Source GitHub Projects
 
-The table below catalogs top open-source invoicing systems, programmatic PDF rendering engines, and document printing utilities. Repositories are ranked in descending order by GitHub star count.
+The table below catalogs top open-source invoicing systems, programmatic PDF rendering engines, and document printing utilities. Repositories are ranked in descending order by GitHub Stars_Count.
 
-| Project | Stars | Language / Stack | License | Description & Highlights |
+| Project | GitHub_Stars | Language / Stack | License | Description & Highlights |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Invoice Ninja](https://github.com/invoiceninja/invoiceninja)** | [![Stars](https://img.shields.io/github/stars/invoiceninja/invoiceninja?style=social&color=white)](https://github.com/invoiceninja/invoiceninja/stargazers) | PHP / Laravel / Flutter | Proprietary Open-Source | Comprehensive self-hosted invoicing, billing, client portal, and payment processing suite with multi-company and PDF generation support. |
 | **[Akaunting](https://github.com/akaunting/akaunting)** | [![Stars](https://img.shields.io/github/stars/akaunting/akaunting?style=social&color=white)](https://github.com/akaunting/akaunting/stargazers) | PHP / Laravel / Blade | GPL-3.0 | Free, full-featured online accounting and invoice management software designed for small businesses and freelancers. |
@@ -159,7 +159,7 @@ Contributions are welcome! Please follow these guidelines:
 
 1. 🍴 Fork the repository.
 2. 🔍 Verify that any SaaS addition includes concrete starting pricing and specific free trial terms.
-3. ⭐ Ensure open-source additions include valid GitHub repository links and star badges (`style=social&color=white`).
+3. ⭐ Ensure open-source additions include valid GitHub repository links and Stars_Badges (`style=social&color=white`).
 4. 📝 Add your entry to the appropriate table, sorted according to category criteria.
 5. 🚀 Submit a Pull Request with a clear, concise description of your additions.
 
